@@ -331,6 +331,7 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
+    overflow-x: hidden;
     max-height: 40vh;
     padding: 5px 20px;
 }
