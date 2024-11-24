@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo.svg" alt="">
+
+        <div class="search">
+            <div class="home-button">
+                <img src="img/home.svg" alt="">
+            </div>
+            <div class="searchbox">
+                <svg class="input-icon-search" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"  width="24" height="24" data-testid="search-icon" class="Svg-sc-ytk21e-0 bHdpig M9l40ptEBXPm03dU3X1k" viewBox="0 0 24 24"><path fill="rgb(179, 179, 179)" d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"></path></svg>
+                <input type="text" name="" id="" class="input-with-icon" placeholder="What do you want to play?">
+                <img src="img/browse.svg" class="input-icon-browse">
+            </div>
+        </div>
+
+        <div class="sign">
+            <div class="signup">
+                <button>Sign up</button>
+            </div>
+            <div class="login">
+                <button>Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="playlist">
+                <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" height="24" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path fill="rgb(179, 179, 179)" d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+                Your Library
+                <svg xmlns="http://www.w3.org/2000/svg" id="plus" data-encore-id="icon" height="15" role="img" style="position: absolute; right:20px;" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path fill="rgb(179, 179, 179)" d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path></svg>   
+                <div class="back"><img src="back.svg" alt=""></div>
+            </div>
+
+            <div class="createPlaylist">
+                <div class="container1">
+                    <p><b>Create your first playlist</b></p>
+                    <p>It's easy,we'll help you</p> 
+                    <button>Create playlist</button>  
+                </div>
+
+                <div class="songList">
+                    <ul></ul>   
+                </div>
+                
+            </div>
+
+            <footer>
+                <p>Legal</p>
+                <p>Safety & Privacy center</p>
+                <p>Privacy Policy</p>
+                <p>Cookies</p>
+                <p>About Ads</p>
+                <p>Accessibility</p>
+                <p>Cookies</p>
+            </footer>
+            
+
+        </div>
+        <div class="right">
+            <div class="mobileView">
+                <h1>Spotify Playlists</h1>
+                <div class="menu"><img src="img/menu.svg" alt=""></div>
+            </div>
+            <div class="cardContainer">
+                <div data-folder="Pop" class="card">
+                    <div class="play">
+                        <img src="img/play.svg">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67706f0000000221bfc69eede9d06b61736b66" alt="">
+                    <h2>Pop Hits!</h2>
+                    <p>Listen to your favourite pop hits</p>
+                </div>
+                <div data-folder="ts" class="card">
+                    <div class="play">
+                        <img src="img/play.svg">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481" alt="">
+                    <h2>Taylor Version!</h2>
+                    <p>Taylor Swift Hits on your fingertip</p>
+                </div>    
+                <div data-folder="bollywoodMix" class="card">
+                    <div class="img/play">
+                        <img src="play.svg">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02083b65ccb6bbec16c8d56eb4" alt="">
+                    <h2>Bollywood Mix!</h2>
+                    <p>Best of Bollywoods, listen to your fav artists</p>
+                </div>
+                <div data-folder="kdrama" class="card">
+                    <div class="play">
+                        <img src="img/play.svg">
+                    </div>
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d72a30085681b483d8de6c3a" alt="">
+                    <h2>Kdrama/Kpop Lover!</h2>
+                    <p>Your favourite osts are here</p>
+                </div>
+                <div data-folder="demiLevato" class="card">
+                    <div class="play">
+                        <img src="img/play.svg">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e027dbbc3d062bcac6f032c99de" alt="">
+                    <h2> It's me Demi Levato!</h2>
+                    <p>With best of Demi Levato</p>
+                </div>
+                <div data-folder="ariana" class="card">
+                    <div class="play">
+                        <img src="img/play.svg">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67706f00000002cd8e2b103295bbd2749d8ea7" alt="">
+                    <h2>This is Ariana Grande!</h2>
+                    <p>Hits to boost your mood and fill with happiness</p>
+                </div>
+            </div>
+
+            <div class="playBar">
+                
+                <div class="songButtons">
+                    <div class="songInfo">
+                        <div class="songName"></div>
+                        <div class="songArtist"></div>
+                    </div>
+                    
+                    <img id="previous" src="img/prevSong.svg" alt="">
+                    <img id="play" src="img/playButton.svg" alt="">
+                    <img id="next" src="img/nextSong.svg" alt="">
+                    <div class="songTime"></div>
+                </div>
+                
+                <div class="seekBar"><div class="circle"></div></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
