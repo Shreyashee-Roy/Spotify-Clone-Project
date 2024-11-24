@@ -22,7 +22,7 @@ const playMusic = (track, pause=false) => {
     currentAudio = new Audio(`/${currFolder}/` + track);
     if(!pause){
         currentAudio.play();
-        play.src = "img/pauseButton.svg"
+        play.src = "pauseButton.svg"
     }
     // currentAudio.play();
     // play.src = "pauseButton.svg"
