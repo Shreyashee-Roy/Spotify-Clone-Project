@@ -22,7 +22,7 @@ const playMusic = (track, pause=false) => {
     currentAudio = new Audio(`/${currFolder}/` + track);
     if(!pause){
         currentAudio.play();
-        play.src = "pauseButton.svg"
+        play.src = "img/pauseButton.svg"
     }
     // currentAudio.play();
     // play.src = "pauseButton.svg"
@@ -48,7 +48,7 @@ const playMusic = (track, pause=false) => {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`songs/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
