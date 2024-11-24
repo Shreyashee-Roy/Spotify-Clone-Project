@@ -95,7 +95,7 @@ async function getSongs(folder) {
 
 async function main(){
     // Get the list of all the songs
-    await getSongs("songs/Pop")
+    await getSongs("songs/pop")
     playMusic(songs[0], true)
     console.log(songs)
 
