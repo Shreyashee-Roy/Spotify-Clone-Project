@@ -19,7 +19,7 @@ const playMusic = (track, pause=false) => {
     }
 
     // Create a new audio object and play the new track
-    currentAudio = new Audio(`songs/${currFolder}/` + track);
+    currentAudio = new Audio(`${currFolder}/` + track);
     if(!pause){
         currentAudio.play();
         play.src = "img/pauseButton.svg"
@@ -48,7 +48,7 @@ const playMusic = (track, pause=false) => {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`songs/${folder}/`)
+    let a = await fetch(`/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -181,7 +181,7 @@ async function main(){
         e.addEventListener("click", async (item) => {
             let folder = item.currentTarget.dataset.folder;
             console.log("Clicked folder:", folder); // Debug folder path
-            songs = await getSongs(`songs/${folder}`);
+            songs = await getSongs(`/${folder}`);
             console.log("Loaded songs:", songs); // Check loaded songs
         });
     });
