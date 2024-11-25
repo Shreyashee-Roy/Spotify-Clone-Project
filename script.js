@@ -47,7 +47,7 @@ const playMusic = (track, pause = false) => {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let response = await fetch(`${folder}/`);
+    let response = await fetch(`/${folder}/`);
     if (!response.ok) {
         console.error(`Failed to fetch songs from ${folder}`);
         return [];
